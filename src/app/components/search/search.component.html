@@ -1,3 +1,18 @@
-<p>
-  search works!
-</p>
+<div style="text-align: center;">
+    <div class="uk-card uk-card-primary uk-card-hover uk-card-body uk-light">
+        <h1 class="uk-card-title"><b>Need Music?</b></h1>
+     
+        <p>Search For Your Favourite Songs , Albums , Artists , Podcasts Just In a Moment ! </p>
+        <br>
+        <form class="uk-grid-small" uk-grid>
+            <div class="uk-width-1-1">
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <a class="uk-form-icon" href="#" uk-icon="icon: search"></a>
+                        <input class="uk-input uk-form-width-large" style="border-radius: 15px;" name="searchStr" (keyup)="searchMusic()" [(ngModel)]="searchStr"  type="text" placeholder="Search">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
