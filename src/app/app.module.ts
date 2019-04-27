@@ -9,19 +9,25 @@ import swal from 'sweetalert';
 import { AuthComponent } from './auth/auth/auth.component';
 import { LayoutsComponent } from './layouts/layouts/layouts.component';
 import { NavbarComponent } from './components/navbar/navbar.component' ;
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './components/about/about.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
     LayoutsComponent,
-    NavbarComponent
+    NavbarComponent,
+    AboutComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    AppMaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
