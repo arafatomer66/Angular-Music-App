@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class ServicesService {
+export class SpotifyService {
 
   constructor(private _https : HttpClient) { }
   searchUrl: string;
@@ -17,5 +17,4 @@ export class ServicesService {
     .pipe(map(res => console.log(res)));
 }
 
-  
 }
